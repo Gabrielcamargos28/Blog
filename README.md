@@ -1,4 +1,4 @@
-# README - Blog Angular
+# Blog Angular
 
 ## Descrição do Projeto
 
