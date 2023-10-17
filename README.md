@@ -4,7 +4,7 @@
 
 Site desenvolvido com Angular, para fixação de conteudos aprendidos na plataforma de ensino alura. Este documento fornece informações essenciais para entender o projeto, configurá-lo e executá-lo localmente.
 
-Você pode acessar o site em: [https://blog-angular-framework.netlify.app/listarPensamento]
+Você pode acessar o site em: [https://blog-angular-framework.netlify.app]
 
 ## Pré-requisitos
 
