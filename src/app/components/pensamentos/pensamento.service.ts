@@ -7,16 +7,22 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PensamentoService {
-  private readonly API = 'http://localhost:3000/pensamentos';
+  private readonly API =
+    'https://api-pensamentos-production.up.railway.app/pensamentos';
+  //https://api-pensamentos-production.up.railway.app/pensamentos/listarpensamentos
+  //private readonly API = 'http://localhost:8080/pensamentos';
 
   constructor(private http: HttpClient) {}
 
   listar(): Observable<Pensamento[]> {
-    return this.http.get<Pensamento[]>(this.API);
+    console.log('teste');
+    const url = `${this.API}/listarpensamentos`;
+    return this.http.get<Pensamento[]>(url);
   }
 
   criar(pensamento: Pensamento): Observable<Pensamento> {
-    return this.http.post<Pensamento>(this.API, pensamento);
+    const url = `${this.API}/cadastrar`;
+    return this.http.post<Pensamento>(url, pensamento);
   }
 
   editar(pensamento: Pensamento): Observable<Pensamento> {
